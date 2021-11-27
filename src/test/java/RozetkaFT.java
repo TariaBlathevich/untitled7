@@ -29,7 +29,7 @@ public class RozetkaFT {
         searchBtn.click();
 
 
-      WebElement titleOfFirstItem = (new WebDriverWait(driver, 10). //мы ждем появления и кликабельноси элемента, но не дольше 10 сек
+        WebElement titleOfFirstItem = (new WebDriverWait(driver, 10). //мы ждем появления и кликабельноси элемента, но не дольше 10 сек
                 until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='goods-tile__heading ng-star-inserted']"))));
         String titleOfFirstItemText = titleOfFirstItem.getText(); //mы создаем стрингу и записываем текст из локатора актуальный чтобы сравнить с ожидаемым
         String titleOfFirstItemTextExpected = "Бокал для шампанского Chef&Sommelier 300 мл серия Macaron (L9348)";
